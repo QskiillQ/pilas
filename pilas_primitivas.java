@@ -18,13 +18,13 @@ public class pilas_primitivas {
             System.out.println("5.) Salir");
             System.out.println("----------------------------------------------------------------------");
             System.out.println(" ");
-            int opt=u.ValidarEntero(sc);
+            int opt=u.ValidarEntero(sc);/*aqui el programa va a llevar a validar la opcion que ingresa el usuario, al metodo validar   */
             switch (opt) {
                 case 1:
-                    pila= u.LlenarPila(pila);
+                    pila= u.LlenarPila(pila);/*estoy llenando la pila con mi objeto u y le estoy entregando a eso la pila */
                     break;
                     case 2:
-                        u.MostrarPila(pila);
+                        u.MostrarPila(pila);/*Aqui estoy llamando el metodo mostrar pila con mi objeto U  */
                         break;
                     case 3:
                         System.out.println("pagina en mantenimiento");
@@ -33,7 +33,7 @@ public class pilas_primitivas {
                         System.out.println("pagina en mantenimiento");
                         break;
                     case 5:
-                        System.out.println("hasta luego");
+                        System.out.println("hasta luego");/*Si el usuario ingresa esta opcion ahora seguir va a ser falso y se va a salir de el while  */
                         seguir=false;
                         break;
                 default:

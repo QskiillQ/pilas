@@ -16,7 +16,7 @@ public class utilidades {
     /*Validamos el rango para que el usuario ingrese el numero */
     public int ValidarRango(int n1,int n2,int numero){
         utilidades u=new utilidades();
-        while (numero<n1|| numero>n2) {
+        while (numero<n1 || numero>n2) {
             System.out.println("ingrese un numero entre"+n1+" y "+n2);
             numero=u.ValidarEntero(sc);
         }
@@ -28,6 +28,7 @@ public class utilidades {
         boolean continuar=true;
         int numero=0, opcion=0;
         while (continuar) {
+            System.out.println(" ");
             System.out.println("Ingrese el numero");
             System.out.println(" ");
             numero=u.ValidarEntero(sc);
